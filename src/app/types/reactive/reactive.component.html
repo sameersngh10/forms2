@@ -1,0 +1,237 @@
+<div class="row p-4 m-3 bg-primary text white">
+  <h1 [class]="HeadStyler">Add Student</h1>
+</div>
+<div class="row">
+  <div class="container">
+    <div [formGroup]="ContacForm">
+      <div class="form-group">
+        <div class="row m-2 bg-grey">
+          <label for="name" class="details">Student Name:</label>
+        </div>
+        <div class="row p-3 m-2 bg-white">
+          <div class="col-3">
+            <label for="pref">Prefix:</label>
+            <select formControlName="preffix" id="pref" class="form-control">
+              <option value="" disabled selected>Select ...</option>
+              <option value="Master">Mr.</option>
+              <option value="Miss">Ms.</option>
+              <option value="please select"></option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label for="fname">First Name:</label>
+            <input
+              type="text"
+              placeholder="first name"
+              class="Ifields"
+              class="form-control"
+              formControlName="firstName"
+            />
+          </div>
+          <div class="col-3">
+            <label for="mname">Middle Name:</label>
+            <input
+              type="text"
+              placeholder="middle name"
+              class="Ifields"
+              class="form-control"
+              formControlName="middleName"
+            />
+          </div>
+          <div class="form-group col-3">
+            <label for="lname">Last Name:</label>
+            <input
+              type="text"
+              placeholder="Last name"
+              class="Ifields"
+              class="form-control"
+              formControlName="lastName"
+            />
+          </div>
+        </div>
+        <div class="row m-2 bg-grey">
+          <label for="name" class="details">Student Class Details:</label>
+        </div>
+        <div class="form-group row p-3 m-2 bg-white">
+          <div class="col-3">
+            <label for="classes" class="col-sm-2 col-form-label"> Class:</label>
+            <select formControlName="class" id="clas" class="form-control">
+              <option value="" disabled selected>Select ...</option>
+              <option value="class1">1</option>
+              <option value="class2">2</option>
+              <option value="class3">3</option>
+              <option value="class4">4</option>
+              <option value="class5">5</option>
+              <option value="class6">6</option>
+              <option value="class7">7</option>
+              <option value="class8">8</option>
+              <option value="class9">9</option>
+              <option value="class10">10</option>
+              <option value="class11">11</option>
+              <option value="class12">12</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <label for="sec" class="col-sm-2 col-form-label"> Section: </label>
+            <select formControlName="section" id="sec" class="form-control">
+              <option value="" disabled selected>Select ...</option>
+              <option value="sectionA">A</option>
+              <option value="SectionB">B</option>
+              <option value="SectionC">C</option>
+            </select>
+          </div>
+          <div class="form-group col-3">
+            <label for="roll" class="col-sm-4 col-form-label"
+              >Roll Number:</label
+            >
+            <input
+              type="number"
+              placeholder="roll No"
+              formControlName="rollNo"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group col-3">
+            <label for="" class="col-sm-4 col-form-label">Admisson No:</label>
+            <input
+              type="number"
+              placeholder="Admisson No"
+              formControlName="admissonNo"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="row m-2 bg-grey">
+          <label for="name" class="details">Student personal Details:</label>
+        </div>
+        <div class="row p-3 m-2 bg-white">
+          <div class="col-3">
+            <label for="heading">Gender:</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="exampleRadios1"
+                value="option1"
+                formControlName="gender"
+              />
+              <label class="form-check-label" for="exampleRadios1">
+                male
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="exampleRadios2"
+                value="option2"
+                formControlName="gender"
+              />
+              <label class="form-check-label" for="exampleRadios2">
+                Female
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="exampleRadios3"
+                value="option3"
+                formControlName="gender"
+              />
+              <label class="form-check-label" for="exampleRadios3">
+                Prefer Not to Say
+              </label>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <label for="hobbies" class="col-sm-4 col-form-label"
+                >Hobbies</label
+              >
+              <select
+                formControlName="hobby"
+                id="pref"
+                class="form-control"
+                multiple
+              >
+                <option value="" disabled selected>Select ...</option>
+                <option value="coding">Coding</option>
+                <option value="Cycling">Cycling</option>
+                <option value="listeningMusic">Listening Music</option>
+                <option value="gaming">Gaming</option>
+                <option value="streaming">watching Movies</option>
+                <option value="sing">Singing</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-3">
+            <label for="fatherName">Father Name:</label>
+            <div class="row">
+              <div class="col-4">
+                <select
+                  formControlName="preffix"
+                  id="pref "
+                  class="form-control"
+                >
+                  <option value="" disabled selected>Select ...</option>
+                  <option value="Master">Mr.</option>
+                  <option value="late">Late</option>
+                  <option value="please select"></option>
+                </select>
+              </div>
+              <div class="col-8">
+                <input
+                  type="text"
+                  formControlName="fatherName"
+                  placeholder="fatherName"
+                  class="form-control"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <label for="motherName">Mother Name:</label>
+            <div class="row">
+              <div class="col-4">
+                <select
+                  formControlName="preffix"
+                  id="pref "
+                  class="form-control"
+                >
+                  <option value="" disabled selected>Select ...</option>
+                  <option value="Mistress">Mrs.</option>
+                  <option value="late">Late</option>
+                  <option value="please select"></option>
+                </select>
+              </div>
+              <div class="col-8">
+                <input
+                  type="text"
+                  formControlName="motherName"
+                  placeholder="Mother Name"
+                  class="form-control"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row p-2 m-2">
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+          <div class="col-sm-2">
+            <button class="btn btn-light" (click)="OnCancel()">Cancel</button>
+          </div>
+          <div class="col-sm-2">
+            <button class="btn btn-primary" (click)="OnSubmit()">Save</button>
+
+            <!-- <button (click)=onSave=()=>{console.log("4")}">Save</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

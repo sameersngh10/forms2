@@ -1,0 +1,38 @@
+<div class="row p-4 m-3 bg-primary text-white">
+  <h1 [class]="styling">Methods Of Building Forms In Angular</h1>
+</div>
+<div class="row">
+  <div class="container">
+    <h3>
+      <p>There are two methods of building forms in Angular</p>
+      <ol>
+        <li [ngClass]="StylingClass" routerLink="types/template-driven">
+          Template Driven Forms
+        </li>
+        <li [ngClass]="StylingClass" routerLink="types/reactive">
+          Reactive Forms
+        </li>
+      </ol>
+      <hr />
+    </h3>
+    <h4>Template driven forms:</h4>
+    <p class="tempt">
+      This tutorial shows you how to create a template-driven form. The control
+      elements in the form are bound to data properties that have input
+      validation. The input validation helps maintain data integrity and styling
+      to improve the user experience. Template-driven forms use two-way data
+      binding to update the data model in the component as changes are made in
+      the template and vice versa.Template-driven forms rely on directives
+      defined in the FormsModule.
+    </p>
+    <h4>Reactive Forms:</h4>
+    <p>
+      Reactive forms use an explicit and immutable approach to managing the
+      state of a form at a given point in time. Each change to the form state
+      returns a new state, which maintains the integrity of the model between
+      changes. Reactive forms are built around observable streams, where form
+      inputs and values are provided as streams of input values, which can be
+      accessed synchronously.
+    </p>
+  </div>
+</div>
